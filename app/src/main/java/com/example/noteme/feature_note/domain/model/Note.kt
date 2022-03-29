@@ -3,6 +3,7 @@ package com.example.noteme.feature_note.domain.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.noteme.ui.theme.*
+import java.lang.Exception
 
 @Entity(tableName = "note")
 data class Note(
@@ -16,3 +17,5 @@ data class Note(
         val noteColors = listOf(RedOrange, LightGreen, Violet, BabyBlue, RedPink)
     }
 }
+
+class InvalidNoteException(message: String): Exception(message)
