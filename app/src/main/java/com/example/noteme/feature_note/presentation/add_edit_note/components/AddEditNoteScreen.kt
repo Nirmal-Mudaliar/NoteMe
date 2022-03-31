@@ -70,7 +70,7 @@ fun AddEditNoteScreen(
             FloatingActionButton(onClick = {
                 viewModel.onEvent(AddEditNoteEvent.SaveNote)
             },
-            backgroundColor = MaterialTheme.colors.secondary
+            backgroundColor = Color.White
             ) {
                 Icon(imageVector = Icons.Default.Save, contentDescription = "Save note")
             }
