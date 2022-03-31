@@ -10,3 +10,8 @@ val RedPink = Color(0xfff48fb1)
 val BabyBlue = Color(0xff81deea)
 val Violet = Color(0xffcf94da)
 val LightGreen = Color(0xffe7ed9b)
+
+val purple_400 = Color(0xff6158D6)
+
+val floatingButtonLight = Color(0xFFF5850F)
+val floatingButtonDark = Color(0xFFFAB0D0)

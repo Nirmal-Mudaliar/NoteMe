@@ -23,7 +23,6 @@ class NotesViewModel @Inject constructor(
     private val _state = mutableStateOf(NotesState())
     val state: State<NotesState> = _state
 
-
     private var recentlyDeletedNote: Note? = null
 
     private var getNotesJob: Job? = null
@@ -40,6 +39,7 @@ class NotesViewModel @Inject constructor(
                     state.value.noteOrder.orderType == event.noteOrder.orderType) {
                     return
                 }
+                getNotes(event.noteOrder)
 
             }
             is NotesEvent.DeleteNote -> {
